@@ -1,5 +1,4 @@
-window.addEventListener("load",cargar);
-function cargar() {
+var cargar = function() {
 	var links = document.getElementsByTagName("a");
 	for(var i=0; i<links.length;i++){
 		var url = links[i].getAttribute("href");
@@ -9,3 +8,4 @@ function cargar() {
 		links[i].appendChild(imgNueva);
 	}
 }
+window.addEventListener("load",cargar);
